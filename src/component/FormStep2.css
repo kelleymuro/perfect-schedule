@@ -1,0 +1,125 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.serviceTypeContainer {
+     display: flex;
+     justify-content: center;
+}
+
+.serviceType {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: white;
+    color: black;
+    height: 280px;
+    width: 350px;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+@media only screen and (max-width: 800px) {
+ .serviceType {
+    height: 180px;
+    width: 150px;
+ } 
+}
+
+.serviceType:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+/* .selected {
+    background-color: black;
+    color: white;
+} */
+
+.serviceName {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.textContainer {
+    padding-left: 20px;
+}
+
+.serviceType:not(:last-of-type) {
+    margin-right: 20px;
+}
+
+.initial {
+    text-align: center;
+    font-size: 25px;
+}
+
+.title {
+    margin-top: 40px;
+}
+
+.timeOfDay {
+    text-align: center;
+    font-size: 25px; 
+    margin-top: 40px;
+
+}
+
+.appointmentContainer {
+    text-align: center;
+}
+
+.btnSelected {
+    background-color: black !important;
+    color: white !important;
+    background: url('https://denisealley.s3-us-west-2.amazonaws.com/greenCheck.png');
+    background-position: 350px 5px;
+    background-repeat:no-repeat;
+    
+}
+
+@media only screen and (max-width: 800px) {
+ .btnSelected {
+    background-position: 180px 5px;
+ } 
+}
+
+
+.appointmentBtn {
+    width: 80%;
+    background-color: white;
+    padding: 10px 20px;
+    color: black;
+    border-radius: 22px;
+    border: 1px solid #8f8f8f;
+    font-weight: bold;
+    transition: all .2s ease-in;
+}
+
+.appointmentBtn:hover {
+    background-color: black;
+    color: white;
+}
+
+.appointmentBtn:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+
+.appointmentNotesContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.appointmentTextArea {
+    height: 100px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
