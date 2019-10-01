@@ -42,12 +42,14 @@ class FormStep2 extends Component {
 
                 <div className="appointmentNotesContainer">
                     <h3 className="timeOfDay">Appointment Notes (optional)</h3>
-                    <textarea placeholder="Please provide any specific service requests..." className="appointmentTextArea"/>
+                    <textarea placeholder="Please provide any specific deta..." className="appointmentTextArea"/>
                 </div>
 
                 <div className="paymentsContainer">
                     <h3 className="paymentTitle">Reserve your appointment with a card</h3>
-    
+                    <input className="inputFields" type="number" placeholder="Enter your credit or debit card"/>
+                    <input className="inputFields side" type="number" placeholder="Exp Date"/>
+                    <input className="inputFields side" type="number" placeholder="CVV"/>
                 </div>
 
                
