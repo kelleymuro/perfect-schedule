@@ -109,7 +109,10 @@ class Form extends Component {
                     <input className="inputFields address" type="text" name="sAddress" placeholder="Address" onChange={this.onChange} value={sAddress} />
                     <input className="inputFields address" type="text" name="sCity" placeholder="City" onChange={this.onChange} value={sCity} />
                     <input className="inputFields side zip" type="tel" name="sZip" placeholder="Zip" onChange={this.onChange} value={sZip} />
-                    <input className="inputFields side state" type="text" name="sState" placeholder="State" onChange={this.onChange} value={sState} />
+                    <select>
+                        <option className="inputFields side state" type="text" name="sState"  onChange={this.onChange} value="0">Select State</option>
+                        <option className="inputFields side state" type="text" name="sState"  onChange={this.onChange} value={sState}>AZ</option>
+                    </select>
                     <input className="inputFields phone" type="tel" name="sPhone" placeholder="Cell Phone" onChange={this.onChange} value={sPhone}/>
                     <input className="inputFields email" type="email" name="sEmail" placeholder="Email Address" onChange={this.onChange} value={sEmail} />
                     <input className="inputFields sqft" type="text" name="sSqFeet" placeholder="Square Feet of Home" onChange={this.onChange} value={sSqFeet} />
