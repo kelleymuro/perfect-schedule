@@ -108,12 +108,12 @@
 .submitBtn {
     color: white;
     border: black;
-    padding: 10px 40px;
+    padding: 15px 40px;
     border-radius: 30px;
     justify-self: end;
     background: black url(https://denisealley.s3-us-west-2.amazonaws.com/Digital__Design_99-512.png);
     background-size: 30px 30px;
-	background-position: 25px 2px;
+	background-position: 25px 7px;
     background-repeat: no-repeat;
     
     

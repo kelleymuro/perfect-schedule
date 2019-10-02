@@ -13,6 +13,7 @@ class Form extends Component {
         sLastName: "",
         sName: "",
         sAddress: "",
+        sCity: "",
         sState: "",
         sZip: "",
         sPhone: "",
@@ -24,7 +25,7 @@ class Form extends Component {
       createCustomer = (e) => {
         e.preventDefault();
         console.log("creating customer");
-        let { sName, sAddress, sState, sZip, sPhone, sEmail, sSqFeet } = this.state;
+        let { sName, sAddress, sCity, sState, sZip, sPhone, sEmail, sSqFeet } = this.state;
     
         if (sName === "") {
           console.log("invalid input");
@@ -37,6 +38,7 @@ class Form extends Component {
           formData.set("dataMain[0][CustomerID]", Math.floor(Date.now() / 1000));
           formData.set("dataMain[0][CustomerName]", sName);
           formData.set("dataMain[0][CustomerAddress]", sAddress);
+          formData.set("dataMain[0][CustomerCity]", sCity);
           formData.set("dataMain[0][CustomerZipCode]", sZip);
           formData.set("dataMain[0][CustomerState]", sState);
           formData.set("dataMain[0][CustomerPhone1]", sPhone);
@@ -90,6 +92,7 @@ class Form extends Component {
      const {
         sName,
         sAddress,
+        sCity,
         sState,
         sZip,
         sPhone,
@@ -104,6 +107,7 @@ class Form extends Component {
                 <form className="formEl">
                     <input className="inputFields name" type="text" name="sName" placeholder="Full Name" onChange={this.onChange} value={sName}/>
                     <input className="inputFields address" type="text" name="sAddress" placeholder="Address" onChange={this.onChange} value={sAddress} />
+                    <input className="inputFields address" type="text" name="sCity" placeholder="City" onChange={this.onChange} value={sCity} />
                     <input className="inputFields side zip" type="tel" name="sZip" placeholder="Zip" onChange={this.onChange} value={sZip} />
                     <input className="inputFields side state" type="text" name="sState" placeholder="State" onChange={this.onChange} value={sState} />
                     <input className="inputFields phone" type="tel" name="sPhone" placeholder="Cell Phone" onChange={this.onChange} value={sPhone}/>
