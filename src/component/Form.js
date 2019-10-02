@@ -116,7 +116,8 @@ class Form extends Component {
                         <option className="inputFields side state" type="text" name="sState"  onChange={this.onChange} value={sState}>AZ</option>
                     </select>
                        <Cleave className="inputFields phone" 
-                       placeholder="Enter phone number" 
+                       placeholder="Enter phone number"
+                       type="tel"
                        name="sPhone" 
                        value={sPhone} 
                        options={{ phone: true, phoneRegionCode: 'US' }}
@@ -127,7 +128,8 @@ class Form extends Component {
                     <Cleave className="inputFields sqft"
                       placeholder="Square Feet Of Home"
                       name="sSqFeet"
-                     value={sSqFeet}
+                      type="tel"
+                      value={sSqFeet}
                       options={{ numeral: true, numeralThousandsGroupStyle: 'thousand' }}
                       onChange={this.onChange}
                     />

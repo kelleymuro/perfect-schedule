@@ -52,15 +52,18 @@ class FormStep2 extends Component {
                 <div className="paymentsContainer">
                     <h3 className="paymentTitle">Reserve your appointment with a card</h3>
                     <Cleave className="inputFields cc card" placeholder="Enter your credit card number"
+                        type="tel"
                         options={{ creditCard: true }}
                         onChange={this.onChange.bind(this)}   
                     />
                     <Cleave className="inputFields cc side" placeholder="Exp Date"
+                        type="tel"
                         options={{ date: true, datePattern: ['m', 'y'] }}
                         onChange={this.onChange.bind(this)}
 
                     />
                     <Cleave className="inputFields cc side" placeholder="CVV"
+                        type="tel"
                         options={{ blocks: [3] }}
                         onChange={this.onChange.bind(this)}
 
