@@ -111,8 +111,8 @@ class Form extends Component {
                     <input className="inputFields address" type="text" name="sAddress" placeholder="Address" onChange={this.onChange} value={sAddress} />
                     <input className="inputFields address" type="text" name="sCity" placeholder="City" onChange={this.onChange} value={sCity} />
                     <input className="inputFields side zip" type="tel" name="sZip" placeholder="Zip" maxLength="5" onChange={this.onChange} value={sZip} />             
-                    <select>
-                        <option className="inputFields side state" type="text" name="sState"  onChange={this.onChange} value="0">Select State</option>
+                    <select className="inputFields side">
+                        <option className="inputFields side state" type="text" name="sState"  onChange={this.onChange} value="0">State</option>
                         <option className="inputFields side state" type="text" name="sState"  onChange={this.onChange} value={sState}>AZ</option>
                     </select>
                        <Cleave className="inputFields phone" 

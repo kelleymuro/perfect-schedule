@@ -76,12 +76,12 @@ class FormStep2 extends Component {
                 <div className="checkboxContainer">
                         <label className="agreementCheckbox"> I authorize Clean to store this card for future service until I cancel this authorization
                             <input type="checkbox"/>
-                            <span class="checkmark"></span>
+                            <span className="checkmark"></span>
                         </label>
 
                         <label className="agreementCheckbox"> I have read and agree to the cancellation policy.
                             <input type="checkbox"/>
-                            <span class="checkmark"></span>
+                            <span className="checkmark"></span>
                         </label>      
                 </div>
                 <div className="completeContainer">

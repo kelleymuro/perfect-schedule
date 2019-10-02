@@ -173,7 +173,8 @@
 .container {
   display: block;
   position: relative;
-  padding-left: 15px;
+  padding-left: 3px;
+  padding-right: 3px;
   margin-bottom: 5px;
   cursor: pointer;
   font-size: 22px;
