@@ -61,7 +61,7 @@
     padding-left: 50px;
 
 }
-.address {
+.address, .zip, .state, .sqft {
     background-image: url(https://denisealley.s3-us-west-2.amazonaws.com/Address.png);
 	background-size: 35px 35px;
 	background-position: 11px 8px;
