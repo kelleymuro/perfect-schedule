@@ -110,7 +110,15 @@ class Form extends Component {
                     <input className="inputFields name" type="text" name="sName" placeholder="Full Name" onChange={this.onChange} value={sName}/>
                     <input className="inputFields address" type="text" name="sAddress" placeholder="Address" onChange={this.onChange} value={sAddress} />
                     <input className="inputFields address" type="text" name="sCity" placeholder="City" onChange={this.onChange} value={sCity} />
-                    <input className="inputFields side zip" type="tel" name="sZip" placeholder="Zip" onChange={this.onChange} value={sZip} />
+                    {/* <input className="inputFields side zip" type="tel" name="sZip" placeholder="Zip" onChange={this.onChange} value={sZip} /> */}
+                    <Cleave className="inputFields side zip"
+                      placeholder="Enter phone number"
+                      type="tel"
+                      name="sZip"
+                      value={sZip}
+                      options={{ blocks: [5] }}
+                      onChange={this.onChange}
+                    />
                     <select>
                         <option className="inputFields side state" type="text" name="sState"  onChange={this.onChange} value="0">Select State</option>
                         <option className="inputFields side state" type="text" name="sState"  onChange={this.onChange} value={sState}>AZ</option>

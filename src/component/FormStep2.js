@@ -64,7 +64,7 @@ class FormStep2 extends Component {
                     />
                     <Cleave className="inputFields cc side" placeholder="CVV"
                         type="tel"
-                        options={{ blocks: [3] }}
+                        options={{ blocks: [4] }}
                         onChange={this.onChange.bind(this)}
 
                     />
