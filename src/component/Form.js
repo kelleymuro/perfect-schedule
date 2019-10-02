@@ -21,7 +21,8 @@ class Form extends Component {
         customer: {}
       };
     
-      createCustomer = () => {
+      createCustomer = (e) => {
+        e.preventDefault();
         console.log("creating customer");
         let { sName, sAddress, sState, sZip, sPhone, sEmail, sSqFeet } = this.state;
     
@@ -103,7 +104,7 @@ class Form extends Component {
                 <form className="formEl">
                     <input className="inputFields name" type="text" name="sName" placeholder="Full Name" onChange={this.onChange} value={sName}/>
                     <input className="inputFields address" type="text" name="sAddress" placeholder="Address" onChange={this.onChange} value={sAddress} />
-                    <input className="inputFields side zip" type="number" name="sZip" placeholder="Zip" onChange={this.onChange} value={sZip} />
+                    <input className="inputFields side zip" type="tel" name="sZip" placeholder="Zip" onChange={this.onChange} value={sZip} />
                     <input className="inputFields side state" type="text" name="sState" placeholder="State" onChange={this.onChange} value={sState} />
                     <input className="inputFields phone" type="tel" name="sPhone" placeholder="Cell Phone" onChange={this.onChange} value={sPhone}/>
                     <input className="inputFields email" type="email" name="sEmail" placeholder="Email Address" onChange={this.onChange} value={sEmail} />

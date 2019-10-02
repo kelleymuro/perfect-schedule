@@ -34,7 +34,6 @@
 .formEl {
   position: relative;
   margin: 0 auto;
-  width: 90%;
 }
 
 .inputFields {
@@ -87,8 +86,8 @@
 }
 .side {
     float: left;
-    width: 45%;
-    margin-right: 10px;
+    width: 50%;
+  
 }
 
 .btnContainer {
