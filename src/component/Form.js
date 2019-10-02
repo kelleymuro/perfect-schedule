@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './Form.css'
+import Cleave from 'cleave.js/react';
+import CleavePhone from 'cleave.js/dist/addons/cleave-phone.i18n';
 
 class Form extends Component {
     state = {
@@ -113,9 +115,23 @@ class Form extends Component {
                         <option className="inputFields side state" type="text" name="sState"  onChange={this.onChange} value="0">Select State</option>
                         <option className="inputFields side state" type="text" name="sState"  onChange={this.onChange} value={sState}>AZ</option>
                     </select>
-                    <input className="inputFields phone" type="tel" name="sPhone" placeholder="Cell Phone" onChange={this.onChange} value={sPhone}/>
+                       <Cleave className="inputFields phone" 
+                       placeholder="Enter phone number" 
+                       name="sPhone" 
+                       value={sPhone} 
+                       options={{ phone: true, phoneRegionCode: 'US' }}
+                      onChange={this.onChange} 
+                      />
+                    {/* <input className="inputFields phone" type="tel" name="sPhone" placeholder="Cell Phone" onChange={this.onChange} value={sPhone}/> */}
                     <input className="inputFields email" type="email" name="sEmail" placeholder="Email Address" onChange={this.onChange} value={sEmail} />
-                    <input className="inputFields sqft" type="text" name="sSqFeet" placeholder="Square Feet of Home" onChange={this.onChange} value={sSqFeet} />
+                    <Cleave className="inputFields sqft"
+                      placeholder="Square Feet Of Home"
+                      name="sSqFeet"
+                     value={sSqFeet}
+                      options={{ numeral: true, numeralThousandsGroupStyle: 'thousand' }}
+                      onChange={this.onChange}
+                    />
+                    {/* <input className="inputFields sqft" type="text" name="sSqFeet" placeholder="Square Feet of Home" onChange={this.onChange} value={sSqFeet} /> */}
                     <div className="btnContainer">
                         <p className="next">Next</p>
                         <input className="submitBtn" type="button"  onClick={this.createCustomer} />

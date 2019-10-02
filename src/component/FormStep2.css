@@ -152,3 +152,17 @@
     border-radius: 10px;
     border: 1px solid black;
 }
+
+.cc {
+    border: 1px solid black;
+}
+
+
+.card {
+    background-image: url(https://reach-schedule.s3-us-west-1.amazonaws.com/card.png);
+	background-size: 35px 35px;
+	background-position: 13px 8px;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+
