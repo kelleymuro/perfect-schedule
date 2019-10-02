@@ -264,7 +264,7 @@
 
 .completeOrder {
     font-family: 'MuzzardH-ExtraLight';
-    background-color: #339bfd;
+    background: #339bfd;
     padding: 15px 35px; 
     border: 1px solid #339bfd;
     color: white;
