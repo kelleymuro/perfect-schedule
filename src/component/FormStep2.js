@@ -11,6 +11,7 @@ class FormStep2 extends Component {
     render() {
         return (
             <div className="container">
+            <form>
                 <h3 className="initial">Initial Service Price &#36;149</h3>
                 <h3 className="plan">Choose Plan</h3>
                 <div className="serviceTypeContainer">
@@ -51,7 +52,7 @@ class FormStep2 extends Component {
                 </div>
                 <div className="paymentsContainer">
                     <h3 className="paymentTitle">Reserve your appointment with a card</h3>
-                    <Cleave className="inputFields cc card" placeholder="Enter your credit card number"
+                    <Cleave className="inputFields cc card" placeholder="Credit Card or Debit"
                         type="tel"
                         options={{ creditCard: true }}
                         onChange={this.onChange.bind(this)}   
@@ -72,7 +73,21 @@ class FormStep2 extends Component {
                     {/* <input className="inputFields cc side" type="number" placeholder="CVV"/> */}
                 </div>
 
-               
+                <div className="checkboxContainer">
+                        <label className="agreementCheckbox"> I authorize Clean to store this card for future service until I cancel this authorization
+                            <input type="checkbox"/>
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label className="agreementCheckbox"> I have read and agree to the cancellation policy.
+                            <input type="checkbox"/>
+                            <span class="checkmark"></span>
+                        </label>      
+                </div>
+                <div className="completeContainer">
+                    <input className="completeOrder" type="button" value="Book Appointment" onClick={this.createCustomer}/>
+                </div>
+                </form>
             </div>
         )
     }

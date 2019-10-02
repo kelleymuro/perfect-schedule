@@ -68,7 +68,7 @@ class Form extends Component {
         this.setState({ [e.target.name]: e.target.value });
       };
 
-
+     
       urlBuilder = (subUrl, dataObj) => {
         const { baseUrl, authenticationToken, authenticationKey } = this.state;
         let finalUrl = `${baseUrl}${subUrl}?authenticationToken=${authenticationToken}&authenticationKey=${authenticationKey}`;
@@ -90,7 +90,7 @@ class Form extends Component {
       };
 
     render() {
-
+      console.log(this.onChange);
      const {
         sName,
         sAddress,
@@ -110,15 +110,7 @@ class Form extends Component {
                     <input className="inputFields name" type="text" name="sName" placeholder="Full Name" onChange={this.onChange} value={sName}/>
                     <input className="inputFields address" type="text" name="sAddress" placeholder="Address" onChange={this.onChange} value={sAddress} />
                     <input className="inputFields address" type="text" name="sCity" placeholder="City" onChange={this.onChange} value={sCity} />
-                    {/* <input className="inputFields side zip" type="tel" name="sZip" placeholder="Zip" onChange={this.onChange} value={sZip} /> */}
-                    <Cleave className="inputFields side zip"
-                      placeholder="Zip"
-                      type="tel"
-                      name="sZip"
-                      value={sZip}
-                      options={{ blocks: [5] }}
-                      onChange={this.onChange}
-                    />
+                    <input className="inputFields side zip" type="tel" name="sZip" placeholder="Zip" maxLength="5" onChange={this.onChange} value={sZip} />             
                     <select>
                         <option className="inputFields side state" type="text" name="sState"  onChange={this.onChange} value="0">Select State</option>
                         <option className="inputFields side state" type="text" name="sState"  onChange={this.onChange} value={sState}>AZ</option>
@@ -129,7 +121,7 @@ class Form extends Component {
                        name="sPhone" 
                        value={sPhone} 
                        options={{ phone: true, phoneRegionCode: 'US' }}
-                      onChange={this.onChange} 
+                       onChange={this.onChange} 
                       />
                     {/* <input className="inputFields phone" type="tel" name="sPhone" placeholder="Cell Phone" onChange={this.onChange} value={sPhone}/> */}
                     <input className="inputFields email" type="email" name="sEmail" placeholder="Email Address" onChange={this.onChange} value={sEmail} />
