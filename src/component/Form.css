@@ -34,6 +34,7 @@
 .formEl {
   position: relative;
   margin: 0 auto;
+  width: 95%;
 }
 
 .inputFields {
@@ -69,7 +70,7 @@
 
 }
 .phone {
-     background-image: url(https://denisealley.s3-us-west-2.amazonaws.com/phone.png);
+    background-image: url(https://denisealley.s3-us-west-2.amazonaws.com/phone.png);
 	background-size: 35px 35px;
 	background-position: 11px 8px;
     background-repeat: no-repeat;
@@ -78,7 +79,7 @@
 }
 .email {
     background: url(https://denisealley.s3-us-west-2.amazonaws.com/kisspng-computer-icons-email-icon-design-equipo-comercial-5b525b3cdb7d21.311695661532123964899.png);
-   background-size: 30px 20px;
+    background-size: 30px 20px;
 	background-position: 13px 13px;
     background-repeat: no-repeat;
     padding-left: 50px;
@@ -105,12 +106,16 @@
 }
 
 .submitBtn {
-    background: black;
     color: white;
     border: black;
-    padding: 5px 30px;
+    padding: 10px 40px;
     border-radius: 30px;
     justify-self: end;
+    background: black url(https://denisealley.s3-us-west-2.amazonaws.com/Digital__Design_99-512.png);
+    background-size: 30px 30px;
+	background-position: 25px 2px;
+    background-repeat: no-repeat;
+    
     
 }
 

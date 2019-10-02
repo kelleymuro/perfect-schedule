@@ -111,7 +111,7 @@ class Form extends Component {
                     <input className="inputFields sqft" type="text" name="sSqFeet" placeholder="Square Feet of Home" onChange={this.onChange} value={sSqFeet} />
                     <div className="btnContainer">
                         <p className="next">Next</p>
-                        <button className="submitBtn" type="submit"  onClick={this.createCustomer} ><img alt="Arrow Button" src='https://denisealley.s3-us-west-2.amazonaws.com/Digital__Design_99-512.png'/></button>
+                        <input className="submitBtn" type="button"  onClick={this.createCustomer} />
                     </div>
                 </form>
             </div>
