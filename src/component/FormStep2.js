@@ -85,7 +85,7 @@ class FormStep2 extends Component {
                         </label>      
                 </div>
                 <div className="completeContainer">
-                    <input className="completeOrder" type="button" value="Book Appointment" onClick={this.createCustomer}/>
+                    <input className="completeOrder" type="button" value="Book Appointment"/>
                 </div>
                 </form>
             </div>
