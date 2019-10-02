@@ -7,7 +7,7 @@ class FormStep2 extends Component {
         return (
             <div className="container">
                 <h3 className="initial">Initial Service Price &#36;149</h3>
-                <h3>Choose Plan</h3>
+                <h3 className="plan">Choose Plan</h3>
                 <div className="serviceTypeContainer">
                     <div className="serviceType selected">
                         <div className="textContainer">
@@ -26,8 +26,8 @@ class FormStep2 extends Component {
                 
                 <h3 className="title">Select Date/Time Window</h3>
                 <Date/>
-                <h3 className="title">Availability Oct 12th</h3>
-                <p className="title">When schedling an appoint there is always 2 hour arrival time window</p>
+                <h3 className="title"><span className="light">Availability</span> Oct 12th</h3>
+                <p className="light">When scheduling an appointment there is always a 2 hour arrival time window</p>
 
                 <div className="appointmentContainer">
                     <h3 className="timeOfDay">Morning</h3>

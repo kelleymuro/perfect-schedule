@@ -1,4 +1,19 @@
+@font-face {
+    font-family: 'MuzzardH';
+    font-style: bold;
+    font-weight: 400;
+    src: url('./fonts/MazzardH-Bold.otf');
+}
+
+@font-face {
+    font-family: 'MuzzardH-ExtraLight';
+    font-style: normal;
+    font-weight: 100;
+    src: url('./fonts/Mazzard.otf');
+}
+
 .container {
+    font-family: 'MuzzardH';
     max-width: 800px;
     margin: 0 auto;
 }
@@ -57,12 +72,25 @@
 }
 
 .initial {
+    font-family: 'MuzzardH';
     text-align: center;
     font-size: 25px;
 }
 
 .title {
+    font-family: 'MuzzardH';
+    text-align: center;
     margin-top: 40px;
+
+}
+
+.light {
+ font-family: 'MuzzardH-ExtraLight';
+ text-align: center;
+}
+
+.plan {
+    padding-left: 15px;
 }
 
 .timeOfDay {
@@ -73,6 +101,7 @@
 }
 
 .appointmentContainer {
+    font-family: 'MuzzardH';
     text-align: center;
 }
 

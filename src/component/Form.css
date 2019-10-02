@@ -1,16 +1,33 @@
+@font-face {
+    font-family: 'MuzzardH';
+    font-style: bold;
+    font-weight: 400;
+    src: url('./fonts/MazzardH-Bold.otf');
+}
+
+@font-face {
+    font-family: 'MuzzardH-ExtraLight';
+    font-style: normal;
+    font-weight: 100;
+    src: url('./fonts/Mazzard.otf');
+}
+
 .container {
      max-width: 800px;
     margin: 0 auto;
 }
 
 .header {
+    font-family: 'MuzzardH';
      font-size: 33px;
     text-align: center;
     text-transform: uppercase;
 }
 
 .paragraph {
-    font-size: 17px;
+    font-family: 'MuzzardH-ExtraLight';
+    font-size: 22px;
+    letter-spacing: 1px;
     text-align: center;
 }
 
@@ -21,6 +38,7 @@
 }
 
 .inputFields {
+    font-family: 'MuzzardH-ExtraLight'; 
     box-sizing: border-box;
     font-size: 24px;
     text-align: left;
@@ -80,6 +98,7 @@
 }
 
 .next {
+    font-family: 'MuzzardH';
     font-size: 20px;
     font-weight: 700;
     padding-right: 20px;
