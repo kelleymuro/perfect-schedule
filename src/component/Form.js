@@ -112,7 +112,7 @@ class Form extends Component {
                     <input className="inputFields address" type="text" name="sCity" placeholder="City" onChange={this.onChange} value={sCity} />
                     {/* <input className="inputFields side zip" type="tel" name="sZip" placeholder="Zip" onChange={this.onChange} value={sZip} /> */}
                     <Cleave className="inputFields side zip"
-                      placeholder="Enter phone number"
+                      placeholder="Zip"
                       type="tel"
                       name="sZip"
                       value={sZip}
