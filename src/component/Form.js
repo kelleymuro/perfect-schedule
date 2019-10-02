@@ -10,7 +10,7 @@ class Form extends Component {
                 <form className="formEl">
                     <input className="inputFields name" type="text" name="name" placeholder="Full Name"/>
                     <input className="inputFields address" type="text" name="address" placeholder="Address"/>
-                    <input className="inputFields side zip" type="number" name="zip" placeholder="Zip Code"/>
+                    <input className="inputFields side zip" type="number" name="zip" placeholder="Zip"/>
                     <input className="inputFields side state" type="text" name="state" placeholder="State"/>
                     <input className="inputFields phone" type="tel" name="phone1" placeholder="Cell Phone"/>
                     <input className="inputFields email" type="email" name="email" placeholder="Email Address" />
