@@ -9,7 +9,7 @@ import "react-datepicker/dist/react-datepicker.css";
 const Date = () => {
     const [startDate, setStartDate] = useState(null);
     return(
-        <div className="container">
+        <div className="dateContainer">
             <DatePicker
                 selected={startDate}
                 onChange={date => setStartDate(date)}
