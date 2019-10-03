@@ -214,6 +214,14 @@ background-position: 25px 7px;
   font-family: 'MuzzardH-ExtraLight';
   text-align: center;
  }
+
+ .lightNote {
+   font-family: 'MuzzardH-ExtraLight';
+   text-align: center;
+   font-size: 13px;
+   position: relative;
+   bottom: 20px
+ }
  
  .plan {
      padding-left: 20px;
@@ -222,7 +230,7 @@ background-position: 25px 7px;
  .timeOfDay {
      text-align: center;
      font-size: 25px; 
-     margin-top: 40px;
+     margin-top: 15px;
  
  }
  
@@ -275,8 +283,8 @@ background-position: 25px 7px;
 
 .card {
   background-image: url(https://reach-schedule.s3-us-west-1.amazonaws.com/card.png);
-background-size: 35px 35px;
-background-position: 13px 8px;
+  background-size: 35px 35px;
+  background-position: 13px 3px;
   background-repeat: no-repeat;
   padding-left: 50px;
 }

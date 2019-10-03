@@ -456,7 +456,7 @@ class UserForm extends Component {
                                         <span className="light">Availability</span>{" "}
                                         {selectedDateString}
                                     </h3>
-                                    <p className="light">
+                                    <p className="lightNote">
                                         When scheduling an appointment there is always a 2 hour
                                         arrival time window
                                      </p>
