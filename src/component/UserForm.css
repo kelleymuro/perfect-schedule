@@ -46,13 +46,14 @@
   font-family: 'MuzzardH-ExtraLight';
   font-size: 22px;
   position: relative;
-  bottom: 34px;
+  bottom: 61px;
   letter-spacing: 1px;
   text-align: center;
 }
 
 .formEl {
 position: relative;
+bottom: 30px;
 margin: 0 auto;
 width: 95%;
 }
