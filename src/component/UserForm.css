@@ -2,14 +2,14 @@
   font-family: 'MuzzardH';
   font-style: bold;
   font-weight: 400;
-  src: url('./fonts/MazzardH-Bold.otf');
+  src: url('https://reach-schedule.s3-us-west-1.amazonaws.com/MazzardH-Bold.otf');
 }
 
 @font-face {
   font-family: 'MuzzardH-ExtraLight';
   font-style: normal;
   font-weight: 100;
-  src: url('./fonts/Mazzard.otf');
+  src: url('https://reach-schedule.s3-us-west-1.amazonaws.com/Mazzard.otfhttps://reach-schedule.s3-us-west-1.amazonaws.com/Mazzard.otf');
 }
 
 .container {
