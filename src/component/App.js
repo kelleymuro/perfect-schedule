@@ -1,12 +1,10 @@
 import React, { Fragment } from 'react';
-import Form from './Form';
-import FormStep2 from './FormStep2';
+import DeepClean from './DeepClean';
 
 const App = () => {
     return (
         <Fragment>
-            <Form />
-            <FormStep2/>
+            <DeepClean/>
         </Fragment>
     ) 
 }

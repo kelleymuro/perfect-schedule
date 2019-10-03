@@ -1,0 +1,373 @@
+@font-face {
+  font-family: 'MuzzardH';
+  font-style: bold;
+  font-weight: 400;
+  src: url('./fonts/MazzardH-Bold.otf');
+}
+
+@font-face {
+  font-family: 'MuzzardH-ExtraLight';
+  font-style: normal;
+  font-weight: 100;
+  src: url('./fonts/Mazzard.otf');
+}
+
+.container {
+  height: 100vh; 
+  max-width: 800px;
+  position: relative;
+  bottom: 30px;
+  margin: 0 auto;
+
+}
+
+.header {
+  font-family: 'MuzzardH';
+   font-size: 53px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-family: 'MuzzardH-ExtraLight';
+  font-size: 22px;
+  position: relative;
+  bottom: 34px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.formEl {
+position: relative;
+margin: 0 auto;
+width: 95%;
+}
+
+.inputFields {
+  font-family: 'MuzzardH-ExtraLight'; 
+  box-sizing: border-box;
+  font-size: 24px;
+  text-align: left;
+  width: 100%;
+  border-radius: 30px;
+  border-style: none;
+  padding: 5px;
+  margin: 12px 0;
+  cursor: auto;
+  -webkit-box-shadow: -1px 2px 26px -14px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 2px 26px -14px rgba(0,0,0,0.75);
+  box-shadow: -1px 2px 26px -14px rgba(0,0,0,0.75);
+  transition: all 0.3s cubic-bezier(0.497, 0.51, 0.25, 1) 0s;
+}
+
+
+
+.name {
+  background-image: url(https://denisealley.s3-us-west-2.amazonaws.com/profile-icon-png-910.png);
+    background-size: 18px 18px;
+  background-position: 13px 10px;
+  background-repeat: no-repeat;
+  padding-left: 50px;
+
+}
+.address, .zip, .state, .sqft {
+  background-image: url(https://denisealley.s3-us-west-2.amazonaws.com/Address.png);
+  background-size: 25px 25px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+  padding-left: 50px;
+
+}
+.phone {
+  background-image: url(https://denisealley.s3-us-west-2.amazonaws.com/phone.png);
+  background-size: 25px 25px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+  padding-left: 50px;
+
+}
+.email {
+  background: url(https://denisealley.s3-us-west-2.amazonaws.com/kisspng-computer-icons-email-icon-design-equipo-comercial-5b525b3cdb7d21.311695661532123964899.png);
+  background-size: 24px 15px;
+background-position: 13px 13px;
+  background-repeat: no-repeat;
+  padding-left: 50px;
+
+}
+.side {
+  float: left;
+  width: 50%;
+
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.next {
+  font-family: 'MuzzardH';
+  font-size: 20px;
+  font-weight: 700;
+  padding-right: 20px;
+  text-transform: uppercase;
+}
+
+.submitBtn {
+  color: white;
+  border: black;
+  padding: 15px 40px;
+  border-radius: 30px;
+  justify-self: end;
+  background: black url(https://denisealley.s3-us-west-2.amazonaws.com/Digital__Design_99-512.png);
+  background-size: 30px 30px;
+background-position: 25px 7px;
+  background-repeat: no-repeat;
+  
+  
+}
+
+.submitBtn img {
+  height: 40px;
+  width: 40px;
+}
+
+.serviceTypeContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.serviceType {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: white;
+  color: black;
+  height: 280px;
+  width: 350px;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 23px -12px rgba(0,0,0,0.75);
+  cursor: pointer;
+  transition: all .2s ease-in;
+}
+
+@media only screen and (max-width: 800px) {
+  .serviceType {
+     height: 180px;
+     width: 150px;
+  } 
+  .btnSelected {
+    background-position: 180px 5px;
+ } 
+ }
+
+ .serviceType:hover {
+  background-color: black;
+  color: white;
+}
+
+.serviceType:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+.serviceName {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.textContainer {
+  padding-left: 20px;
+}
+
+
+.initial {
+  font-family: 'MuzzardH';
+  text-align: center;
+  font-size: 25px;
+}
+
+.title {
+  font-family: 'MuzzardH';
+  text-align: center;
+  margin-top: 40px;
+
+}
+
+.light {
+  font-family: 'MuzzardH-ExtraLight';
+  text-align: center;
+ }
+ 
+ .plan {
+     padding-left: 20px;
+ }
+ 
+ .timeOfDay {
+     text-align: center;
+     font-size: 25px; 
+     margin-top: 40px;
+ 
+ }
+ 
+ .appointmentContainer {
+     font-family: 'MuzzardH';
+     text-align: center;
+ }
+ 
+.appointmentBtn {
+  width: 80%;
+  cursor: pointer;
+  background-color: white;
+  padding: 10px 20px;
+  color: black;
+  border-radius: 22px;
+  border: 1px solid #8f8f8f;
+  font-weight: bold;
+  transition: all .2s ease-in;
+}
+
+.appointmentBtn:hover {
+  background-color: black;
+  color: white;
+}
+
+.appointmentBtn:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.appointmentNotesContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.appointmentTextArea {
+  height: 100px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+
+.paymentsContainer {
+  margin-bottom: 100px;
+}
+
+.cc {
+  border: 1px solid black;
+}
+
+.card {
+  background-image: url(https://reach-schedule.s3-us-west-1.amazonaws.com/card.png);
+background-size: 35px 35px;
+background-position: 13px 8px;
+  background-repeat: no-repeat;
+  padding-left: 50px;
+}
+
+
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-bottom: 5px;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.agreementCheckbox {
+  font-family: 'MuzzardH-ExtraLight';
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+/* Hide the browser's default checkbox */
+.agreementCheckbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+/* On mouse-over, add a grey background color */
+.agreementCheckbox:hover input ~ .checkmark {
+  background-color: #fff;
+}
+
+/* When the checkbox is checked, add a blue background */
+.agreementCheckbox input:checked ~ .checkmark {
+  background-color: #339bfd;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.agreementCheckbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.agreementCheckbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+.completeContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.completeOrder {
+    font-family: 'MuzzardH-ExtraLight';
+    background: #339bfd;
+    padding: 15px 35px; 
+    border: 1px solid #339bfd;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 8px;
+}
