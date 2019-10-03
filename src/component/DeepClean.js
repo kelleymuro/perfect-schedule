@@ -436,7 +436,7 @@ class UserForm extends Component {
 
         return (
             <div className="container">
-                <h1 className="header">Hello {customer.fname}</h1>
+                <h1 className="header">Hello <span className="customerName">{customer.fname}</span></h1>
                 {customerCreated ? null : <p className="paragraph">Lets Get Started</p>}
                 <form className="formEl">
                     {customerCreated ? (
